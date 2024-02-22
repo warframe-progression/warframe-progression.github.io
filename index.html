@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src = "tree.js"></script>
+    <script src = "jit.js"></script>
+    <script>
+      var viz = new $jit.Viz({
+        'injectInto': 'infovis',
+        'width': 900,
+        'height': 500
+      });
+    </script>
     <title>Warframe Progression</title>
   </head>
   <body onload = "init();">
-    <p>Hello world</p>
+    <div id = "infovis"></div>
   </body>
 </html>
